@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <style>
+        .imgDiv{
+            width:100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .imgDivChild{
+            width: 50%;
+            height: 60vh;
+            background-size: cover;
+            border-radius: 5px;
+            /* box-shadow: 5px -5px 5px -5px rgba(0,0,0,0.5); */
+            box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.2);
+            /* box-shadow: 2px 2px 4px 1px rgb(129, 244, 208); */
+            animation: slider 10s linear infinite;
+        }
+        @keyframes slider {
+         0%{
+            background-image: url(/images/hero-bg.jpg);
+         }   
+         30%{
+            background-image: url(/images/pexels-alena-koval-820673.jpg);
+         }
+         60%{
+            background-image: url(/images/pexels-lumn-604575.jpg);
+         }
+         80%{
+            background-image: url(/images/pexels-miesha-renae-maiden-390574.jpg);
+         }
+         100%{
+            background-image: url(/images/pexels-ylanite-koppens-843266.jpg);
+         }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="imgDiv">
+      <div class="imgDivChild"></div>
+    </div>
+</body>
+</html>
